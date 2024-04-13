@@ -9,9 +9,6 @@ export default function Home() {
   return (
     <main className="">
       
-
-      <Link href={'/home'}>Go to Home page</Link>
-
       <div>
         logo component goes here
       </div>

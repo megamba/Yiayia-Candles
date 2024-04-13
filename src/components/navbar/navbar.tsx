@@ -25,12 +25,14 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-      {navLinks.map((link) => (
-          <Link href={link.path} key={link.name}>
-            <li>{link.name}</li>
-          </Link>  
-        ))
-      }
+        <ul className="">
+          {navLinks.map((link) => (
+              <Link href={link.path} key={link.name}>
+                <li>{link.name}</li>
+              </Link>  
+            ))
+          }
+      </ul>
       </nav>
     </div>
   );
