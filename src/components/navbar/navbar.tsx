@@ -1,37 +1,37 @@
 import React from 'react';
 import Link from 'next/link';
 
-const navLinks = [
+interface NavLink {
+  name: string;
+  path: string;
+}
+
+const navLinks: NavLink[] = [
   {
     name: 'about',
-    path: 'src/app/about'
+    path: '/about'
   },
   {
     name: 'shop',
-    path: 'src/app/shop'
+    path: '/shop'
   },
   {
     name: 'contact',
-    path: 'src/app/contact'
+    path: '/contact'
   },
 ]
 
-const Navbar = () => {
+export default function Navbar() {
   return (
     <div>
       <nav>
-        {navLinks.map((link, index) => {
-          return (
-            <ul>
-              <Link href={link.path}>
-                <li key={index}>{link.name}</li>
-              </Link>
-            </ul>
-          );
-        })}
+      {navLinks.map((link) => (
+          <Link href={link.path} key={link.name}>
+            <li>{link.name}</li>
+          </Link>  
+        ))
+      }
       </nav>
     </div>
   );
 };
-
-export default Navbar;
