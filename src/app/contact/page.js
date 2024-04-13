@@ -5,28 +5,14 @@ import Link from "next/link";
 import Navbar from "@/components/navbar/navbar";
 
 
-export default function Home() {
+export default function Contact() {
   return (
     <main className="">
       
+      <p>Contact</p>
 
       <Link href={'/home'}>Go to Home page</Link>
 
-      <div>
-        logo component goes here
-      </div>
-
-      <Navbar />
-
-      <div>
-        hero goes here
-      </div>
-
-      <div>
-        welcome to yiayia
-      </div>
-
-      
     </main>
   );
 }
