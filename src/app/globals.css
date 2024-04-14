@@ -9,17 +9,25 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  /* text colors */
-  --textColor-header-rgb: 0, 0, 0;
-  --textColor-subHeader-rgb: 0, 0, 0;
-  --textColor-body-rgb: 0, 0, 0;
-  --textColor-subBody-rgb: 0, 0, 0;
+  /* color styles */
+  --color1-rgb: 39, 76, 119;
+  --color2-rgb: 141, 169, 196;
+  --color3-rgb: 209, 223, 232;
+  --color4-rgb: 249, 248, 242;
 
   /* font sizes */
-  --fontSize_header: 24px;
-  --fontSize_subHeader: 24px;
-  --fontSize_body: 24px;
-  --fontSize_subBody: 24px;
+  --fontSize_header: 3.5rem;
+  --fontSize_subHeader: 2rem;
+  --fontSize_body: 9rem;
+  --fontSize_subBody: 1.6rem;
+  --fontSize_hero: 5rem;
+
+  /* font weights */
+  --fontWeight_semiBold: 600;
+  --fontWeight_regular: 400;
+  --fontWeight_bold: 700;
+  --fontWeight_productTitle: 500;
+  --fontWeight_productPrice: 300;
 
   /* body sizing + spacing */
   /* 
@@ -29,6 +37,7 @@
   */
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -36,19 +45,19 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*/
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--color4-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bodyText {
+  color: rgb(var(--color1-rgb))
 }

@@ -6,13 +6,17 @@ import Navbar from '../navbar/navbar'
 export default function Header() {
     return (
         // root container of header
-      <div className="flex flex-row justify-between p-15">
+      <div className="flex w-full max-w-7xl mx-auto">
 
-        <div>Logo</div>
+        <div className='w-1/4'>yiayia</div>
 
-        {/* spacer here */}
+        <div className='w-1/2'>{/* spacer */}</div>
 
-        <Navbar />
+        <div className='w-1/4'>
+            <Navbar />
+        </div>
+
+        
         
       </div>
     );

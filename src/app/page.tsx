@@ -1,7 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-
-// components
 
 
 export default function Home() {
@@ -9,7 +5,9 @@ export default function Home() {
     <main className="">
 
       <div>
-        hero goes here
+        <p className="text4xl">
+          hero goes here
+        </p>
       </div>
 
       <div>

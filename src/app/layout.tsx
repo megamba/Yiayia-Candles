@@ -2,11 +2,17 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 
-// font imports
-import { Inter } from "next/font/google";
+// font imports + definitions
+import { Inter, Roboto, Outfit } from "next/font/google";
 
-// font definitions
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: "400"
+});
+const outfit = Outfit({ subsets: ["latin"] });
+
+// add fonts: outfit (nav bar text, sub body, product title + price), roboto (body text), laisha (h1), outfit
 
 // comoponents
 import Header from "../components/header/header";

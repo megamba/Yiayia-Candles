@@ -27,7 +27,7 @@ export default function Navbar() {
       <nav>
         <ul className="flex flex-row space-evenly">
           {navLinks.map((link) => (
-              <Link href={link.path} key={link.name}>
+              <Link href={link.path} key={link.name} className='p-4'>
                 <li>{link.name}</li>
               </Link>  
             ))
