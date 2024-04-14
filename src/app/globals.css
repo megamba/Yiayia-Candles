@@ -3,9 +3,30 @@
 @tailwind utilities;
 
 :root {
+
+  /* body colors */
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  /* text colors */
+  --textColor-header-rgb: 0, 0, 0;
+  --textColor-subHeader-rgb: 0, 0, 0;
+  --textColor-body-rgb: 0, 0, 0;
+  --textColor-subBody-rgb: 0, 0, 0;
+
+  /* font sizes */
+  --fontSize_header: 24px;
+  --fontSize_subHeader: 24px;
+  --fontSize_body: 24px;
+  --fontSize_subBody: 24px;
+
+  /* body sizing + spacing */
+  /* 
+  
+    left-right padding: gutter 15, width: 75, total size: 1440px ; 1440 - 1065 = 375 -> 187.5px on each side
+  
+  */
 }
 
 @media (prefers-color-scheme: dark) {

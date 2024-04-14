@@ -8,8 +8,6 @@ import Navbar from "@/components/navbar/navbar";
 export default function Shop() {
   return (
     <main className="">
-
-        <Navbar />
       
         <p>Shop</p>
 
