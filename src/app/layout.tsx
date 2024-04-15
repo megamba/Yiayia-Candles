@@ -4,14 +4,18 @@ import styles from './layout.module.css';
 import "./globals.css";
 
 // font imports + definitions
-import { Inter, Roboto, Outfit } from "next/font/google";
+import { Roboto, Outfit } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: "400"
+  weight: "400",
+  variable: "--font-roboto"
 });
-const outfit = Outfit({ subsets: ["latin"] });
+const outfit = Outfit({ 
+  subsets: ["latin"],
+  variable: "--font-outfit"
+});
+
 
 // add fonts: outfit (nav bar text, sub body, product title + price), roboto (body text), laisha (h1), outfit
 
@@ -32,7 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={styles.container}>
+      <body className={`${outfit.variable} ${roboto.variable} ${styles.container}`}>
         <Header />
         {children}
         <Footer />
