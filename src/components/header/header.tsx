@@ -2,6 +2,7 @@ import React from 'react'
 
 // components
 import Navbar from '../navbar/navbar'
+import Logo from '../logo/logo';
 
 export default function Header() {
     return (
@@ -10,7 +11,11 @@ export default function Header() {
 
         <div className='w-1/4 text-3xl'>yiayia</div>
 
-        <div className='w-1/2'>{/* spacer */}</div>
+        <div className='w-1/4'>
+          <Logo />
+        </div>
+
+        <div className='w-1/4'>{/* spacer */}</div>
 
         <div className='w-1/4'>
             <Navbar />
