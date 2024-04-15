@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import styles from './layout.module.css';
 
 import "./globals.css";
 
@@ -31,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={styles.container}>
         <Header />
         {children}
         <Footer />

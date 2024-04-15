@@ -62,6 +62,12 @@ body {
   color: rgb(var(--color1-rgb))
 }
 
-.logo{
+.logo-symbol{
+  display: inline-block;
+  border-right-width:35px;
+  border-color: rgb(var(--color4-rgb));
+}
+
+.logo-title{
   display: inline-block;
 }
