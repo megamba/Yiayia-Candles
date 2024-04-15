@@ -12,14 +12,27 @@ export default function Home() {
         </p>
       </div>
 
-      <div>
-        <h1>welcome to yiayia</h1>
-        <p>
-          Step into our world of light and tradition, where each product is a tribute 
-          to Yiayia's legacy. Handcrafted with care and infused with scents that evoke 
-          memories and spirits, our candles and soaps bring comfort, connection, and a 
-          touch of magic to every moment.
-        </p>
+
+      {/* welcome to yiayia section */}
+      <div className="border-gray-600 border-2 flex flex-row justify-around">
+        
+
+        <div className="flex flex-col justify-evenly w-1/3">
+          <h1 className="text-1 ">
+            Welcome to Yiayiá
+          </h1>
+          <p>
+            Step into our world of light and tradition, where each product is a tribute 
+            to Yiayia's legacy. Handcrafted with care and infused with scents that evoke 
+            memories and spirits, our candles and soaps bring comfort, connection, and a 
+            touch of magic to every moment.
+          </p>
+        </div>
+
+        <div>
+          candle image
+        </div>
+        
       </div>
 
       <div>
