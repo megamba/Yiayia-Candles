@@ -9,6 +9,9 @@ const config: Config = {
   theme: {
     colors:{
       1: '#274C77',
+      2: '#8DA9C4',
+      3: '#D1DFE8',
+      4: '#F9F8F2'
     },
     extend: {
       backgroundImage: {
@@ -16,12 +19,13 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        outfit: ['var(--font-outfit)'],
+        roboto: ['var(--font-roboto)'],
+        laisha: ['Laisha', 'sans-serif'],
+      },
     },
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
-    },
-    fontSize: {},
+    
     screens: {    // define these later
       'sm': '640px',
       'md': '768px',

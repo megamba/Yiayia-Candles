@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+// components
 import WhyUsBanner from "@/components/whyUsBanner/whyUsBanner";
 
 
@@ -18,10 +21,10 @@ export default function Home() {
         
 
         <div className="flex flex-col justify-evenly w-1/3">
-          <h1 className="text-1 ">
+          <h1 className="text-1 text-4xl font-roboto">
             Welcome to Yiayiá
           </h1>
-          <p>
+          <p className="text-2 text-xl">
             Step into our world of light and tradition, where each product is a tribute 
             to Yiayia's legacy. Handcrafted with care and infused with scents that evoke 
             memories and spirits, our candles and soaps bring comfort, connection, and a 
@@ -30,7 +33,12 @@ export default function Home() {
         </div>
 
         <div>
-          candle image
+          <Image 
+            src="/assets/welcomeToYiayia.png" 
+            alt="sun and moon candle with beautiful pink flowers"
+            width={652}
+            height={364}
+          />
         </div>
         
       </div>
