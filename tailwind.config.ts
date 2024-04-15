@@ -21,7 +21,7 @@ const config: Config = {
       },
       fontFamily: {
         outfit: ['var(--font-outfit)'],
-        roboto: ['var(--font-roboto)'],
+        // roboto: ['var(--font-roboto)'],
         laisha: ['Laisha', 'sans-serif'],
       },
     },
