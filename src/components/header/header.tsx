@@ -6,9 +6,9 @@ import Navbar from '../navbar/navbar'
 export default function Header() {
     return (
         // root container of header
-      <div className="flex w-full max-w-7xl mx-auto">
+      <div className="border-black border-2 flex w-full max-w-7xl mx-auto pt-3 pb-3">
 
-        <div className='w-1/4'>yiayia</div>
+        <div className='w-1/4 text-3xl'>yiayia</div>
 
         <div className='w-1/2'>{/* spacer */}</div>
 
@@ -20,4 +20,4 @@ export default function Header() {
         
       </div>
     );
-  };
+};

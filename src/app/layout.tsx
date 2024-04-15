@@ -16,6 +16,7 @@ const outfit = Outfit({ subsets: ["latin"] });
 
 // comoponents
 import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 
 
 export const metadata: Metadata = {
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
