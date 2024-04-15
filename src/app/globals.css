@@ -61,3 +61,7 @@ body {
 .bodyText {
   color: rgb(var(--color1-rgb))
 }
+
+.logo{
+  display: inline-block;
+}

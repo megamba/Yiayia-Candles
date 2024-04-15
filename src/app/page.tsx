@@ -35,6 +35,8 @@ export default function Home() {
         
       </div>
 
+      <WhyUsBanner />
+
       <div>
         <h4>
           Independently owned and operated since 2020,
@@ -44,8 +46,6 @@ export default function Home() {
         </p>
       </div>
 
-
-      <WhyUsBanner />
 
       
     </main>

@@ -29,7 +29,7 @@ export default function Navbar() {
           {navLinks.map((link) => (
               <Link href={link.path} key={link.name} className='text-xl'>
                 <li>{link.name}</li>
-              </Link>  
+              </Link>
             ))
           }
       </ul>
